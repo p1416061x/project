@@ -49,33 +49,62 @@
 								<p>Aliquam sit amet aliquet velit. Sed non sollicitudin sapien. Donec aliquet, justo non ultrices iaculis, ante enim consequat ante, id sollicitudin metus arcu commodo tellus. Aliquam vel lacinia dolor, vitae luctus metus. Nunc ut lorem nec diam viverra cursus nec eget nunc. Curabitur laoreet massa iaculis lorem hendrerit, a efficitur sem mattis. Praesent semper odio eget quam fermentum gravida. Duis neque sem, rutrum ac efficitur at, molestie vitae sapien.</p>
 							</article>
 
-						<!-- About -->
+						<!-- How To Get There -->
 							<article id="How To Get There">
 								<h2 class="major">How To Get There</h2>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae velit convallis, aliquet felis nec, placerat lacus. Suspendisse vehicula ut purus non imperdiet. Morbi lacinia posuere sem nec mollis. Quisque gravida ac eros vel ultrices. Donec non purus accumsan, commodo nibh sit amet, mollis nibh. Cras at efficitur velit. Duis velit mi, sagittis nec ultrices id, ultrices a urna. Quisque bibendum condimentum odio, id consequat ante vestibulum sed.</p>
 							</article>
 
 						<!-- Contact -->
-							<article id="contact">
+							<article id="Contact">
 								<h2 class="major">Contact</h2>
-								<form method="post" action="#">
-									<div class="field half first">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field half">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="4"></textarea>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="special" /></li>
-										<li><input type="reset" value="Reset" /></li>
-									</ul>
-								</form>
+									<form method="post" action="#">
+										<div class="field half first">
+											<label for="name">Name</label>
+											<input type="text" name="name" id="name" value="" placeholder="First Name, Surname" />
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="email" name="email" id="email" value="" placeholder="youremail@email.co.uk" />
+										</div>
+										<div class="field">
+											<label for="category">Category</label>
+											<div class="select-wrapper">
+												<select name="category" id="category">
+													<option value="">-</option>
+													<option value="1">About The Website</option>
+													<option value="1">About Shisha</option>
+													<option value="1">General Query</option>
+													<option value="1">Other</option>
+												</select>
+											</div>
+										</div>
+										<div class="field half first">
+											<input type="radio" id="priority-low" name="priority" checked>
+											<label for="priority-low">Low</label>
+										</div>
+										<div class="field half">
+											<input type="radio" id="priority-high" name="priority">
+											<label for="priority-high">High</label>
+										</div>
+										<div class="field half first">
+											<input type="checkbox" id="copy" name="copy">
+											<label for="copy">Check For A Copy</label>
+										</div>
+										<div class="field half">
+											<input type="checkbox" id="human" name="human" checked>
+											<label for="human">Check To Confirm You Are Not a Robot</label>
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
+										</div>
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="special" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</form>
+                                
 								<ul class="icons">
 									<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 									<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
