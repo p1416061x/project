@@ -68,16 +68,19 @@ html {
 .pimg1 {
   background-image: url('images/image1.jpg');
   min-height: 100%;
+  z-index: auto;
 }
 
 .pimg2 {
   background-image: url('images/image2.jpg');
   min-height: 400px;
+  z-index: auto;
 }
 
 .pimg3 {
   background-image: url('images/image3.jpg');
   min-height: 100%;
+  z-index: auto;
 }
 
 video {
@@ -124,49 +127,84 @@ video {
   text-align: center;
 }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 .pics {
-  margin: 0 auto;
-  text-align: center;
-  border: 1px solid #ccc;
-  float: left;
-  max-width: 400px;
-  font-size: 15px;
-  align-content: center;
-  opacity: 1;
-  transform: scale(1.0);
-  transition: all 500ms linear;
-  position: relative;
-  z-index: 1;
-  margin: 10px;
-}
-pics:hover {
-  border: 1px solid #777;
-  transition: all 200ms linear;
-  transform: scale(1.2);
-  opacity: 1;
-  z-index: 99;
-}
-.pics img {
-  width: 100%;
-  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
+.pics a {
+  font-size: 16px;
+  display: inline-block;
+  margin-bottom: 8px;
+  width: calc(50% - 4px);
+  text-decoration: none;
+  color: #f2f2f2;
+}
+
+.pics a:nth-of-type(2n) {
+  margin-right: 0;
+}
+
+@media screen and (min-width: 600px) {
+  .pics a {
+    width: calc(25% - 6px);
+  }
+
+  .pics a:nth-of-type(2n) {
+    margin-right: 8px;
+  }
+
+  .pics a:nth-of-type(4n) {
+    margin-right: 0;
+  }
+}
+
+.pics a:hover img {
+  transform: scale(1.15);
+}
+
+.pics figure {
+  margin: 0;
+  overflow: hidden;
+}
+
+.pics figcaption {
+  margin-top: 15px;
+}
+
+img {
+  border: none;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  background: #ccc;
+  transition: transform .2s ease-in-out;
+}
+
+.p a {
+  display: inline;
+  font-size: 13px;
+  margin: 0;
+  text-decoration: underline;
+  color: blue;
+}
+
+.p {
+  text-align: center;
+  font-size: 13px;
+  padding-top: 100px;
+}
 
 /*Contact Form*/
 
-#form-main {
+.form-main {
   width: 100%;
   float: left;
   padding-top: 0px;
 }
 
-#form-div {
+.form-div {
   background-color: rgba(72, 72, 72, 0.4);
   padding-left: 35px;
   padding-right: 35px;
