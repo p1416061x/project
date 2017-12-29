@@ -1,121 +1,156 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    
-    <head>
-        <title> Front End Web Development Assignment </title>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" type "text/css" href="stylesheet.css"/>
-    </head>
-    
-    <body>
-        
-        <header id="header">
-						<div class="logo">
-							<span class="icon shisha"></span>
-						</div>
-						<div class="content">
-							<div class="inner">
-								<h1>Where To Smoke</h1>
-							</div>
-						</div>
-						<nav>
-							<ul>
-								<li><a href="#Introduction">Introduction</a></li>
-								<li><a href="#The Best Spots">The Best Spotswork</a></li>
-								<li><a href="#How To Get There">How To Get ThereAbout</a></li>
-								<li><a href="#Contact">Contact</a></li>
-							</ul>
-						</nav>
-                    </header>       
-				<!-- Main -->
-					<div id="main">
 
-						<!-- Intro -->
-							<article id="intro">
-								<h2 class="major">Introduction</h2>
-								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae velit convallis, aliquet felis nec, placerat lacus. Suspendisse vehicula ut purus non imperdiet. Morbi lacinia posuere sem nec mollis. Quisque gravida ac eros vel ultrices. Donec non purus accumsan, commodo nibh sit amet, mollis nibh. Cras at efficitur velit. Duis velit mi, sagittis nec ultrices id, ultrices a urna. Quisque bibendum condimentum odio, id consequat ante vestibulum sed. By the way, check out the <a href="#The Best Spots">best spots</a>.</p>
-								<p>Aliquam sit amet aliquet velit. Sed non sollicitudin sapien. Donec aliquet, justo non ultrices iaculis, ante enim consequat ante, id sollicitudin metus arcu commodo tellus. Aliquam vel lacinia dolor, vitae luctus metus. Nunc ut lorem nec diam viverra cursus nec eget nunc. Curabitur laoreet massa iaculis lorem hendrerit, a efficitur sem mattis. Praesent semper odio eget quam fermentum gravida. Duis neque sem, rutrum ac efficitur at, molestie vitae sapien.</p>
-							</article>
+<head>
+  <title>
+    Front End Web Development Assignment
+  </title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="styles.css" type="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="icon" href="images/shishaicon.jpg" />
+</head>
 
-						<!-- The Best Spots -->
-							<article id="The Best Spots">
-								<h2 class="major">The Best Spots</h2>
-								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-                                <span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-                                <span class="image main"><img src="images/pic04.jpg" alt="" /></span>
-                                <span class="image main"><img src="images/pic05.jpg" alt="" /></span>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae velit convallis, aliquet felis nec, placerat lacus. Suspendisse vehicula ut purus non imperdiet. Morbi lacinia posuere sem nec mollis. Quisque gravida ac eros vel ultrices. Donec non purus accumsan, commodo nibh sit amet, mollis nibh. Cras at efficitur velit. Duis velit mi, sagittis nec ultrices id, ultrices a urna. Quisque bibendum condimentum odio, id consequat ante vestibulum sed.</p>
-								<p>Aliquam sit amet aliquet velit. Sed non sollicitudin sapien. Donec aliquet, justo non ultrices iaculis, ante enim consequat ante, id sollicitudin metus arcu commodo tellus. Aliquam vel lacinia dolor, vitae luctus metus. Nunc ut lorem nec diam viverra cursus nec eget nunc. Curabitur laoreet massa iaculis lorem hendrerit, a efficitur sem mattis. Praesent semper odio eget quam fermentum gravida. Duis neque sem, rutrum ac efficitur at, molestie vitae sapien.</p>
-							</article>
+<body>
+  <!-- go to the top-->
 
-						<!-- How To Get There -->
-							<article id="How To Get There">
-								<h2 class="major">How To Get There</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae velit convallis, aliquet felis nec, placerat lacus. Suspendisse vehicula ut purus non imperdiet. Morbi lacinia posuere sem nec mollis. Quisque gravida ac eros vel ultrices. Donec non purus accumsan, commodo nibh sit amet, mollis nibh. Cras at efficitur velit. Duis velit mi, sagittis nec ultrices id, ultrices a urna. Quisque bibendum condimentum odio, id consequat ante vestibulum sed.</p>
-							</article>
+  <a href="#" class="go-top">To Top</a>
 
-						<!-- Contact -->
-							<article id="Contact">
-								<h2 class="major">Contact</h2>
-									<form method="post" action="#">
-										<div class="field half first">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" value="" placeholder="First Name, Surname" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="email" name="email" id="email" value="" placeholder="youremail@email.co.uk" />
-										</div>
-										<div class="field">
-											<label for="category">Category</label>
-											<div class="select-wrapper">
-												<select name="category" id="category">
-													<option value="">-</option>
-													<option value="1">About The Website</option>
-													<option value="1">About Shisha</option>
-													<option value="1">General Query</option>
-													<option value="1">Other</option>
-												</select>
-											</div>
-										</div>
-										<div class="field half first">
-											<input type="radio" id="priority-low" name="priority" checked>
-											<label for="priority-low">Low</label>
-										</div>
-										<div class="field half">
-											<input type="radio" id="priority-high" name="priority">
-											<label for="priority-high">High</label>
-										</div>
-										<div class="field half first">
-											<input type="checkbox" id="copy" name="copy">
-											<label for="copy">Check For A Copy</label>
-										</div>
-										<div class="field half">
-											<input type="checkbox" id="human" name="human" checked>
-											<label for="human">Check To Confirm You Are Not a Robot</label>
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
-										</div>
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="special" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</form>
-                                
-								<ul class="icons">
-									<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-								</ul>
-							</article>
+  <!-- Nav -->
 
+  <div class="topnav" id="myTopnav">
+    <a href="#Where-To-Smoke" class="active"><img src="images/smokeicon.gif" alt="Where To Smoke"></a>
+    <a href="#Introduction">Introduction</a>
+    <a href="#The-Best-Spots">The Best Spots</a>
+    <a href="#How-To-Get-There">How To Get There</a>
+    <a href="#Contact-Us">Contact us</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
 
-    
-    </body>
+  <!-- Intro -->
+  <div class="pimg1">
+    <section class="ptext">
+      <span class="border">Where To Smoke</span>
+    </section>
+  </div>
+  <div class="section section-light">
+    <article id="Introduction">
+      <h2>
+        Introduction
+      </h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae velit convallis, aliquet felis nec, placerat lacus. Suspendisse vehicula ut purus non imperdiet. Morbi lacinia posuere sem nec mollis. Quisque gravida ac eros vel ultrices. Donec non purus accumsan, commodo nibh sit amet, mollis nibh. Cras at efficitur velit. Duis velit mi, sagittis nec ultrices id, ultrices a urna. Quisque bibendum condimentum odio, id consequat ante vestibulum sed. Check out the <a href="#The-Best-Spots">best spots</a>
+        <video poster="video/video.JPG" controls autoplay>
+        <source src="video/Shisha%20Promo%20Video.mp4" type="video/mp4">
+      </video>
+      </p>
+    </article>
+  </div>
+  <!-- The Best Spots -->
+  <div class="pimg2">
+    <section class="ptext">
+      <span class="border">The Best Spots</span>
+    </section>
+  </div>
+  <div class="section section-dark">
+    <article id="The-Best-Spots">
+      <h2>
+        The Best Spots
+      </h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae velit convallis, aliquet felis nec, placerat lacus. Suspendisse vehicula ut purus non imperdiet. Morbi lacinia posuere sem nec mollis. Quisque gravida ac eros vel ultrices. Donec non purus accumsan, commodo nibh sit amet, mollis nibh. Cras at efficitur velit. Duis velit mi, sagittis nec ultrices id, ultrices a urna. Quisque bibendum condimentum odio, id consequat ante vestibulum sed. Find out <a href="#How-To-Get-There">how to get there</a>.
+      </p>
+      <div class="pics">
+        <a href="images/alfeena.jpg">
+          <figure>
+            <img src="images/alfeena.jpg" alt="AlFeena">
+            <figcaption>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+            </figcaption>
+          </figure>
+        </a>
+        <a href="images/aljumeirah.jpg">
+          <figure>
+            <img src="images/aljumeirah.jpg" alt="AlJumeirah">
+            <figcaption>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, ut labore et dolore magna aliqua
+            </figcaption>
+          </figure>
+        </a>
+        <a href="images/bukhoor.jpg">
+          <figure>
+            <img src="images/bukhoor.jpg" alt="Bukhoor">
+            <figcaption>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, ut labore et dolore magna aliqua
+            </figcaption>
+          </figure>
+        </a>
+        <a href="images/embassy.jpg">
+          <figure>
+            <img src="images/embassy.jpg" alt="Embassy">
+            <figcaption>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, ut labore et dolore magna aliqua
+            </figcaption>
+          </figure>
+        </a>
+      </div>
+    </article>
+  </div>
 
-
+  <!-- How To Get There -->
+  <div class="pimg3">
+    <section class="ptext">
+      <span class="border">How To Get There</span>
+    </section>
+  </div>
+  <div class="section section-light">
+    <article id="How-To-Get-There">
+      <h2>
+        How To Get There
+      </h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae velit convallis, aliquet felis nec, placerat lacus. Suspendisse vehicula ut purus non imperdiet. Morbi lacinia posuere sem nec mollis. Quisque gravida ac eros vel ultrices. Donec non purus accumsan, commodo nibh sit amet, mollis nibh. Cras at efficitur velit. Duis velit mi, sagittis nec ultrices id, ultrices a urna. Quisque bibendum condimentum odio, id consequat ante vestibulum sed. If you have any questions <a href="#Contact-Us">contact us</a>.
+      </p>
+    </article>
+  </div>
+  <!-- Contact -->
+  <div class="pimg1">
+    <section class="ptext">
+      <span class="border">Contact Us</span>
+    </section>
+  </div>
+  <div class="section section-dark">
+    <article id="Contact-Us">
+      <h2>
+        Contact Us
+      </h2>
+      <div id="form-main">
+        <div id="form-div">
+          <form class="form" id="form1">
+            <p class="name">
+              <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
+            </p>
+            <p class="email">
+              <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+            </p>
+            <p class="text">
+              <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment">
+                  </textarea>
+            </p>
+            <div class="submit">
+              <input type="submit" value="SEND" id="button-blue" />
+              <div class="ease"></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </article>
+  </div>
+  <script src="javascript/navigation.js">
+  </script>
+  <script src="javascript/gotop.js">
+  </script>
+</body>
 
 </html>
