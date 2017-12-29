@@ -1,13 +1,58 @@
 "use strict";
 
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
+(function () {
+
+  let menuButton = document.getElementById("menu");
+  let navMenu = document.getElementById("nav-menu");
+
+  menuButton.addEventListener("click", toggleMenu);
+
+  let toggle = false; // hidden at first
+  function toggleMenu() {
+    if (toggle) { // true: it's visible
+      navMenu.classList.remove("show-menu"), // hide it
+        toggle = false
+    } else { // false: it's hidden
+      navMenu.classList.add("show-menu"), // show it
+        toggle = true
+    }
   }
+})();
+
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+      pageLanguage: 'en'
+    },
+    'google_translate_element'
+  );
 }
+
+(function () {
+
+  document.getElementById('slideshow').getElementsByTagName('img')[0].className = "fx";
+  window.setInterval(kenBurns, 6000);
+  let images = document.getElementById('slideshow').getElementsByTagName('img'),
+    numberOfImages = images.length,
+    i = 1;
+
+  function kenBurns() {
+    if (i == numberOfImages) {
+      i = 0;
+    }
+    images[i].className = "fx";
+    if (i === 0) {
+      images[numberOfImages - 2].className = "";
+    }
+    if (i === 1) {
+      images[numberOfImages - 1].className = "";
+    }
+    if (i > 1) {
+      images[i - 2].className = "";
+    }
+    i++;
+
+  }
+})();
 
 function initMap() {
   let leicester = {
@@ -79,7 +124,7 @@ function initMap() {
                 action=query& \
                 generator=search& \
                 gsrnamespace=0& \
-                gsrlimit=10& \
+                gsrlimit=5& \
                 prop=info|extracts|langlinks|pageimages& \
                 inprop=url& \
                 exintro& \

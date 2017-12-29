@@ -8,9 +8,12 @@
   <meta charset="UTF-8" />
   <link rel="stylesheet" href="styles.css" type="text/css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Mr+Dafoe' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Amaranth:700' rel='stylesheet' type='text/css'>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="icon" href="images/shishaicon.jpg" />
+  
 </head>
 
 <body>
@@ -20,14 +23,15 @@
 
   <!-- Nav -->
 
-  <div class="topnav" id="myTopnav">
-    <a href="#Where-To-Smoke" class="active"><img src="images/smokeicon.gif" alt="Where To Smoke"></a>
+  <a id="menu" href="#"> &#9776; </a>
+
+  <nav id="nav-menu">
     <a href="#Introduction">Introduction</a>
     <a href="#The-Best-Spots">The Best Spots</a>
     <a href="#How-To-Get-There">How To Get There</a>
     <a href="#Contact-Us">Contact us</a>
-    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-  </div>
+  <div id="google_translate_element"></div>
+  </nav>
 
   <!-- Intro -->
   <div class="pimg1">
@@ -62,6 +66,14 @@
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae velit convallis, aliquet felis nec, placerat lacus. Suspendisse vehicula ut purus non imperdiet. Morbi lacinia posuere sem nec mollis. Quisque gravida ac eros vel ultrices. Donec non purus accumsan, commodo nibh sit amet, mollis nibh. Cras at efficitur velit. Duis velit mi, sagittis nec ultrices id, ultrices a urna. Quisque bibendum condimentum odio, id consequat ante vestibulum sed. Find out <a href="#How-To-Get-There">how to get there</a>.
       </p>
+
+      <div id="slideshow">
+        <img src="images/alfeena.jpg" alt="AlFeena">
+        <img src="images/aljumeirah.jpg" alt="AlJumeirah">
+        <img src="images/bukhoor.jpg" alt="Bukhoor">
+        <img src="images/embassy.jpg" alt="Embassy">
+      </div>
+
       <div class="pics">
         <a href="images/alfeena.jpg">
           <figure>
@@ -114,7 +126,7 @@
 
       <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDC_E1RyV-P855w8QEJ7i0iBJ4sroJubw&callback=initMap"></script>
       <p>
-        if you have any questions <a href="#Contact-Us">contact us or search below </a>.
+        if you have any questions search below or <a href="#Contact-Us">contact us</a>.
       </p>
 
       <form id="searchForm">
@@ -178,10 +190,8 @@
     </ul>
   </footer>
   <script src="javascript/scripts.js">
-
-
   </script>
-
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 </body>
 
