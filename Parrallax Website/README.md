@@ -11,9 +11,9 @@ DOESN'T OPEN A NEW PAGE THEREFORE NOT SERIES OF PAGES
 # Wireframes
 ## Mobile View
 
-!(wireframes/6.jpg)
-!(wireframes/1.jpg)
-!(wireframes/5.jpg)
+![](wireframes/6.jpg)
+![](wireframes/1.jpg)
+![](wireframes/5.jpg)
 
 
 ## Desktop
